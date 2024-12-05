@@ -1,7 +1,7 @@
 
 
 
-with open("input.txt", "r") as file:
+with open("test.txt", "r") as file:
     
     mid_count = 0
     hash_table = {}
@@ -18,7 +18,7 @@ with open("input.txt", "r") as file:
             hash_table[line[1]].append(line[0])
     
     print("dict constructed")
-    #print(hash_table)
+    print(hash_table)
 
     for line in file:
         line = line.rstrip()
